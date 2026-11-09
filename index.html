@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emanuel Cristóvão — Redes & Backend</title>
+<meta name="description" content="Técnico de Informática (ITEL) com foco em redes, administração de sistemas e backend. Autor do routConfig, avaliado em 19/20.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,44 +15,45 @@
 <header class="topbar">
   <span class="mark">E.C</span>
   <nav>
-    <a href="#projeto" data-nav>Projeto</a>
-    <a href="#competencias" data-nav>Competências</a>
-    <a href="#percurso" data-nav>Percurso</a>
-    <a href="#contacto" data-nav>Contacto</a>
+    <a href="#projeto" data-nav data-i18n="nav.project">Projeto</a>
+    <a href="#competencias" data-nav data-i18n="nav.skills">Competências</a>
+    <a href="#percurso" data-nav data-i18n="nav.path">Percurso</a>
+    <a href="#contacto" data-nav data-i18n="nav.contact">Contacto</a>
   </nav>
+  <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Change language">EN</button>
 </header>
 
 <main>
   <section class="hero">
     <div class="hero-text reveal">
       <p class="hero-tag">Icolo e Bengo, Angola</p>
-      <h1>Emanuel Cristóvão<br>constrói infraestrutura<br>e software, com raiz<br>em redes.</h1>
-      <p class="hero-lede">Técnico de Informática formado pelo ITEL. Atua em redes de computadores, administração de sistemas e desenvolvimento backend — com preferência por redes e infraestrutura. Autor do routConfig, uma ferramenta de configuração de routers via ligação série, avaliada em 19/20.</p>
+      <h1 data-i18n-html="hero.title">Emanuel Cristóvão<br>constrói infraestrutura<br>e software, com raiz<br>em redes.</h1>
+      <p class="hero-lede" data-i18n="hero.lede">Técnico de Informática formado pelo ITEL. Atua em redes de computadores, administração de sistemas e desenvolvimento backend — com preferência por redes e infraestrutura. Autor do routConfig, uma ferramenta de configuração de routers via ligação série, avaliada em 19/20.</p>
       <div class="hero-links">
-        <a href="#projeto" class="btn-primary">Ver o routConfig</a>
-        <a href="#contacto" class="btn-ghost">Contactar</a>
+        <a href="#projeto" class="btn-primary" data-i18n="hero.cta1">Ver o routConfig</a>
+        <a href="#contacto" class="btn-ghost" data-i18n="hero.cta2">Contactar</a>
       </div>
     </div>
     <div class="hero-photo reveal">
-      <img src="WhatsApp Image 2026-07-13 at 11.09.18.jpeg" alt="Retrato de Emanuel Cristóvão">
+      <img src="foto.jpg" alt="Retrato de Emanuel Cristóvão" data-i18n-alt="hero.alt">
     </div>
   </section>
 
   <div class="rule"></div>
 
   <section id="projeto" class="project reveal">
-    <p class="eyebrow">Projetos em destaque</p>
+    <p class="eyebrow" data-i18n="project.eyebrow">Projetos em destaque</p>
     <h2>routConfig</h2>
-    <p class="project-desc">Interface web para configuração de routers Cisco (séries 1800 e 1900) via ligação série, criada para eliminar a inserção manual de código no equipamento. O técnico preenche as variáveis num formulário e o sistema aplica as configurações de protocolos e serviços de rede automaticamente. Projeto avaliado em 19/20.</p>
+    <p class="project-desc" data-i18n="project.desc">Interface web para configuração de routers Cisco (séries 1800 e 1900) via ligação série, criada para eliminar a inserção manual de código no equipamento. O técnico preenche as variáveis num formulário e o sistema aplica as configurações de protocolos e serviços de rede automaticamente. Projeto avaliado em 19/20.</p>
 
     <div class="project-grid">
       <div class="project-col">
-        <p class="col-label">O que resolve</p>
-        <p>Reduz a fricção entre a linha de comandos do Cisco IOS e um fluxo de trabalho gerível por interface gráfica , totalmente intuitiva  — reduzindo assim o esforço mental , e aumentando a rapidez nas configuração de serviços e protocolos de rede.</p>
+        <p class="col-label" data-i18n="project.solves.label">O que resolve</p>
+        <p data-i18n="project.solves.text">Reduz a fricção entre a linha de comandos do Cisco IOS e um fluxo de trabalho gerido por uma interface gráfica totalmente intuitiva, reduzindo o esforço mental e aumentando a rapidez na configuração de serviços e protocolos de rede.</p>
       </div>
       <div class="project-col">
-        <p class="col-label">Estado técnico</p>
-        <p>Estabilizado com 18 tabelas de base de dados antes de uma apresentação a investidores. Resolvido um bug de sincronização em que a função <code>_merge_acls_with_db</code> reativava registos de ACL que o utilizador tinha apagado. Sem bugs conhecidos em aberto.</p>
+        <p class="col-label" data-i18n="project.status.label">Estado técnico</p>
+        <p data-i18n-html="project.status.text">Estabilizado com 18 tabelas de base de dados antes de uma apresentação a investidores. Resolvido um bug de sincronização em que a função <code>_merge_acls_with_db</code> reativava registos de ACL que o utilizador tinha apagado. Sem bugs conhecidos em aberto.</p>
       </div>
     </div>
 
@@ -63,8 +65,8 @@
     </div>
 
     <div class="project-secondary">
-      <h3>Sistema de gestão de estagiários</h3>
-      <p>Plataforma construída para o ITEL, com o objetivo de facilitar a gestão de estagiários: permite cadastrar, acompanhar o estado do estágio e gerar currículo automaticamente para cada estagiário.</p>
+      <h3 data-i18n="project2.title">Sistema de gestão de estagiários</h3>
+      <p data-i18n="project2.text">Plataforma construída para o ITEL, com o objetivo de facilitar a gestão de estagiários: permite cadastrar, acompanhar o estado do estágio e gerar currículo automaticamente para cada estagiário.</p>
       <div class="stack-row">
         <span class="stack-tag">HTML</span>
         <span class="stack-tag">CSS</span>
@@ -76,19 +78,19 @@
   <div class="rule"></div>
 
   <section id="competencias" class="skills reveal">
-    <p class="eyebrow">Competências</p>
+    <p class="eyebrow" data-i18n="skills.eyebrow">Competências</p>
     <div class="skills-grid">
       <div class="skill-block">
-        <h3>Formações</h3>
+        <h3 data-i18n="skills.training">Formações</h3>
         <ul>
           <li>CCNA 1, 2 & 3</li>
-          <li>Programação Web</li>
+          <li data-i18n="skills.web">Programação Web</li>
           <li>PowerBI</li>
-          <li>Excel Avançado</li>
+          <li data-i18n="skills.excel">Excel Avançado</li>
         </ul>
       </div>
       <div class="skill-block">
-        <h3>Desenvolvimento</h3>
+        <h3 data-i18n="skills.dev">Desenvolvimento</h3>
         <ul>
           <li>Python</li>
           <li>FastAPI</li>
@@ -97,10 +99,10 @@
         </ul>
       </div>
       <div class="skill-block">
-        <h3>Línguas</h3>
+        <h3 data-i18n="skills.langs">Línguas</h3>
         <ul>
-          <li>Português — Nativo</li>
-          <li>Inglês — Avançado</li>
+          <li data-i18n="skills.pt">Português — Nativo</li>
+          <li data-i18n="skills.en">Inglês — Avançado</li>
         </ul>
       </div>
     </div>
@@ -109,28 +111,32 @@
   <div class="rule"></div>
 
   <section id="percurso" class="path reveal">
-    <p class="eyebrow">Percurso</p>
+    <p class="eyebrow" data-i18n="path.eyebrow">Percurso</p>
     <div class="path-item">
-      <p class="path-date">Formação</p>
-      <p class="path-title">Técnico Médio em Informática — ITEL</p>
-      <p class="path-desc">Instituto de Telecomunicações de Angola, Luanda.</p>
+      <p class="path-date" data-i18n="path.edu.date">Formação</p>
+      <div>
+        <p class="path-title" data-i18n="path.edu.title">Técnico Médio em Informática — ITEL</p>
+        <p class="path-desc">Instituto de Telecomunicações de Angola, Luanda.</p>
+      </div>
     </div>
     <div class="path-item">
-      <p class="path-date">Estágio · 3 meses</p>
-      <p class="path-title">Instituto de Telecomunicações de Angola</p>
-      <p class="path-desc">Estágio profissional aplicado em ambiente de Informática.</p>
+      <p class="path-date" data-i18n="path.intern.date">Estágio · 3 meses</p>
+      <div>
+        <p class="path-title">Instituto de Telecomunicações de Angola</p>
+        <p class="path-desc" data-i18n="path.intern.desc">Estágio profissional aplicado em ambiente de Informática.</p>
+      </div>
     </div>
   </section>
 
   <div class="rule"></div>
 
   <section id="contacto" class="contact reveal">
-    <p class="eyebrow">Contacto</p>
-    <h2>Vamos falar.</h2>
+    <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+    <h2 data-i18n="contact.title">Vamos falar.</h2>
     <div class="contact-links">
       <a href="mailto:henzocristovao16@gmail.com">henzocristovao16@gmail.com</a>
       <a href="https://github.com/Henzo16" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/emanuel-henzo-cristóvão-70702937b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/emanuel-henzo-crist%C3%B3v%C3%A3o-70702937b" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </section>
 </main>
@@ -139,6 +145,7 @@
   <p>Emanuel Cristóvão — Icolo e Bengo, Angola</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
